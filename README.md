@@ -7,6 +7,6 @@ A Google Chrome bookmarklet that extracts lyrics from Japanese site [UtaMap](htt
 
 2. Go to a page with lyrics.
 
-3. Click the bookmarklet.
+3. Click the bookmarklet in your bookmarks bar.
 
 4. The lyrics will appear in a new tab. **Note**: pop-ups must be enabled for the site for this to work.
