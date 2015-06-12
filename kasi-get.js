@@ -2,7 +2,7 @@ javascript:(function(){
 
     var filepath = "http://www.utamap.com/" + $($("script[language=\"javascript\"")[0]).attr("src");
 
-    $.get(filepath, extractAndDisplay, 'text');
+    $.get(filepath, extractAndDisplay, "text");
 })();
 
 function extractAndDisplay(data) {
@@ -15,8 +15,8 @@ function extractAndDisplay(data) {
 function extractTextFromPage(data) {
 
     var regex = /context2.fillText\(\'([^)]+)\'/g;
-    var lines = []
 
+    var lines = []
     while (line = regex.exec(data))
         lines.push(line[1]);
 
