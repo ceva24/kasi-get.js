@@ -1,19 +1,19 @@
 javascript:(function(){
 
-	// lyrics are embedded into the page via a javascript file - get it's location
+    // lyrics are embedded into the page via a javascript file - get it's location
     var filepath = "http://www.utamap.com/" + $($("script[language=\"javascript\"")[0]).attr("src");
 
-    $.get(filepath, extractAndDisplay, "text");
+    $.get(filepath, showLyrics, "text");
 })();
 
-function extractAndDisplay(data) {
+function showLyrics(data) {
 
-    var lines = extractTextFromPage(data);
+    var lines = extractLyricsFromScript(data);
 
-    displayTextInNewWindow(lines);
+    showLyricsInNewWindow(lines);
 }
 
-function extractTextFromPage(data) {
+function extractLyricsFromScript(data) {
 
     var regex = /context2.fillText\(\'([^)]+)\'/g;
 
@@ -24,7 +24,7 @@ function extractTextFromPage(data) {
     return lines;
 }
 
-function displayTextInNewWindow(lines) {
+function showLyricsInNewWindow(lines) {
 
     var w = window.open();
 
