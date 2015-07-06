@@ -28,10 +28,6 @@ function showLyricsInNewWindow(lines) {
 
     var w = window.open();
 
-    $(w.document.body).append("<p>");
-
     for (var i = 0; i < lines.length; i++)
         $(w.document.body).append(lines[i] + "<br>");
-
-    $(w.document.body).append("</p>");
 }
