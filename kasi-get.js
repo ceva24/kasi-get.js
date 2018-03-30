@@ -34,5 +34,5 @@ function showLyricsInNewWindow(lines) {
 
     for (var i = 0; i < lines.length; i++)
         // Remove the escape character from escaped apostrophes
-        $(w.document.body).append(lines[i].replace(/\\'/, "'") + "<br>");
+        $(w.document.body).append(lines[i].replace(/\\'/g, "'") + "<br>");
 }
