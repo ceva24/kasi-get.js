@@ -3,7 +3,7 @@ A bookmarklet that extracts lyrics from Japanese site [utamap](http://www.utamap
 
 ## Instructions
 
-1. Go to the following page and bookmark the link there (workaround as github disallows javascript links): [kasi-get](http://www.ceva24.co.uk/pages/kasi-get/).
+1. Go to the following page and bookmark the link there (workaround as github disallows javascript links): [kasi-get](https://www.ceva24.dev/public/kasi-get/).
 
 2. Go to an utamap page with lyrics.
 
