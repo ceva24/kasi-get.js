@@ -1,5 +1,5 @@
 # kasi-get.js
-A bookmarklet that extracts lyrics from Japanese site [utamap](http://www.utamap.com).
+A bookmarklet that extracts lyrics from [https://www.utamap.com](https://www.utamap.com).
 
 ## Instructions
 
